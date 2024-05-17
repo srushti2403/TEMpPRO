@@ -26,7 +26,7 @@ const StudentTable = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await fetch("http://192.168.1.13:5082/api/Student"); // Replace 'http://your-api-url/api/student' with your actual API endpoint
+      const response = await fetch("http://ec2-35-171-88-102.compute-1.amazonaws.com/api/Student"); // Replace 'http://your-api-url/api/student' with your actual API endpoint
       if (response.ok) {
         const data = await response.json();
         console.log(data, "Data");
